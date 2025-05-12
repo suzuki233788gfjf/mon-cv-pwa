@@ -1,0 +1,51 @@
+
+.contact {
+    background-color: #f3e5f5;
+    padding: 40px 20px;
+    text-align: center;
+    color: #6a1b9a;
+  }
+  
+  .contact h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .contact p {
+    margin: 15px 0;
+    font-size: 1.1em;
+  }
+  
+  .contact a {
+    color: #e91e63;
+    text-decoration: none;
+    margin-left: 8px; /* Ajustez si besoin */
+  }
+  
+  .contact a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact i {
+    font-size: 1.2em;
+    vertical-align: middle;
+    color: #6a1b9a;
+  }
+  
+  /* Ajoutez les styles pour contact-links et les images si vous les avez dans votre CSS original */
+  .contact-links {
+     margin-top: 20px;
+     display: flex;
+     justify-content: center;
+     gap: 15px; /* Espace entre les icônes */
+  }
+  
+  .contact-links img {
+     width: 40px; /* Ajustez la taille si 48px est trop grand */
+     height: 40px; /* Ajustez la taille */
+     transition: transform 0.3s ease;
+  }
+  
+  .contact-links img:hover {
+      transform: scale(1.1);
+  }

@@ -1,0 +1,23 @@
+/* src/components/VideoSection.css */
+/* Copiez ici les règles CSS pour la section vidéo */
+.video-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #fce4ec;
+  }
+  
+  .video-section h2 {
+    font-size: 28px; /* Adaptez si besoin selon vos styles globaux */
+    margin-bottom: 20px;
+    color: #880e4f;
+  }
+  
+  .video-section video {
+    width: 80%;
+    max-width: 700px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  }
+  
+  /* Styles pour la section elle-même si non gérés globalement */
+   

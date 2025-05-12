@@ -1,0 +1,94 @@
+#cv { /* L'ID est important pour le scroll de la navbar */
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+ /* #cv h2 { /* Adaptez si besoin si vous avez d'autres h2 globaux */
+     /* Styles pour le titre h2 de cette section */
+ /* }
+  
+  
+  .intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: auto;
+    animation: fadeIn 1.8s ease-in-out;
+  }
+  
+  .intro-image {
+    flex: 1 1 250px;
+    max-width: 300px;
+  }
+  
+  .intro-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  }
+  
+  .cv-intro {
+    background-color: #fbe9f0;
+    padding: 25px;
+    border-radius: 20px;
+    flex: 2 1 400px;
+    color: #6a1b9a;
+    font-size: 1.05em;
+    line-height: 1.6em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.07);
+  }
+  
+  .cv-intro strong {
+    color: #ad1457;
+  }
+  
+  .cv-intro em {
+    color: #880e4f;
+    font-weight: bold;
+  }
+  
+  .cv-text {
+    background-color: #f8bbd0;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    color: #4a148c;
+    font-weight: 500;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .cv-audio-btn {
+   padding: 15px 30px;
+   font-size: 1.2em;
+   background-color: #e91e63;
+   color: white;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   margin-top: 30px;
+   box-shadow: 0 8px 15px rgba(233, 30, 99, 0.3);
+   transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .cv-audio-btn:hover {
+   background-color: #c2185b;
+   transform: scale(1.05);
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Vous pouvez ajouter ici les styles pour les h2, p, etc. si vous ne les avez pas dans index.css */
+  /* Par exemple, les styles que vous aviez pour 'section h2' */
+  section h2 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+  }

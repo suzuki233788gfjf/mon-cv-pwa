@@ -1,0 +1,53 @@
+
+.timeline-section {
+    background-color: #fce4ec;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .timeline-section h2 {
+    color: #880e4f;
+    font-size: 2em;
+    margin-bottom: 40px;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+    padding-left: 20px;
+    border-left: 4px solid #e91e63;
+  }
+  
+  .timeline-item {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  
+  .timeline-date {
+    font-weight: bold;
+    color: #ad1457;
+    margin-bottom: 10px;
+  }
+  
+  .timeline-content {
+    background: #f8bbd0;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    color: #6a1b9a;
+    text-align: left;
+    margin-left: 20px;
+  }
+  
+  .timeline-item::before {
+    content: "";
+    position: absolute;
+    left: -12px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background-color: #e91e63;
+    border-radius: 50%;
+    border: 3px solid white;
+  }
