@@ -11,24 +11,25 @@ jobs:
     runs-on: ubuntu-latest # Exécute le job sur une machine Ubuntu virtuelle
     permissions:
       contents: write # Donne la permission d'écrire sur le contenu du dépôt
-      pages: write  
-    steps:
-      - name: Checkout code 🛎️
-        uses: actions/checkout@v4 # Récupère votre code du dépôt
+      pages: write
+    steps: # <-- Indentez cette ligne comme ceci (au même niveau que runs-on et permissions)
+      - name: Checkout code 🛎️ # <-- Indentez cette ligne et toutes les suivantes comme ceci
+        uses: actions/checkout@v4
 
       - name: Set up Node.js 🪢
         uses: actions/setup-node@v4
         with:
-          node-version: 20 # Utilisez la version de Node.js que vous utilisez (par exemple, 18, 20, 22)
+          node-version: 20
 
       - name: Install dependencies 📦
-        run: npm install # Installe les dépendances de votre projet
+        run: npm install
 
       - name: Build project 🏗️
-        run: npm run build # Lance la commande de build de Vite (qui génère le dossier 'dist')
+        run: npm run build
 
       - name: Deploy to GitHub Pages 🚀
-        uses: peaceiris/actions-gh-pages@v3 # Utilise une action pour déployer
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }} # Jeton d'authentification fourni par GitHub
-          publish_dir: ./dist # Indique de publier le contenu du dossier 'dist'
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+    # Assurez-vous qu'il n'y a rien d'autre mal indenté en dessous
