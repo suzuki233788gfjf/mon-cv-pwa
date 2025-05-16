@@ -9,6 +9,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest # Exécute le job sur une machine Ubuntu virtuelle
+    permissions:
+      contents: write # Donne la permission d'écrire sur le contenu du dépôt
+      pages: write  
     steps:
       - name: Checkout code 🛎️
         uses: actions/checkout@v4 # Récupère votre code du dépôt
